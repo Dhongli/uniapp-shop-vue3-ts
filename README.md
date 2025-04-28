@@ -26,7 +26,7 @@
 
 ### 📦 项目源码
 
-[https://gitee.com/Megasu/uniapp-shop-vue3-ts/](https://gitee.com/Megasu/uniapp-shop-vue3-ts/)
+[https://gitcode.com/Megasu/uniapp-shop-vue3-ts/](https://gitcode.com/Megasu/uniapp-shop-vue3-ts/)
 
 ## 运行程序
 
