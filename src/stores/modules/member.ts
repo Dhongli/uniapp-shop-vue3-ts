@@ -30,6 +30,8 @@ export const useMemberStore = defineStore(
     // 网页端配置
     // persist: true,
     // 小程序端配置
+    // getItem setItem是pinia-plugin-persistedstate插件要求的接口，通过uni.getStorageSync(key)和uni.setStorageSync(key, value)实现持久化存储
+    // https://prazdevs.github.io/pinia-plugin-persistedstate/guide/config.html#storage
     persist: {
       storage: {
         getItem: (key) => {
