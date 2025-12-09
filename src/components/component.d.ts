@@ -1,5 +1,5 @@
 // src/types/components.d.ts
-import XtxSwiper from './xtx-swiper.vue'
+import XtxSwiper from '@/components/XtxSwiper.vue'
 
 declare module 'vue' {
   export interface GlobalComponents {
