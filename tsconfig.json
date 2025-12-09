@@ -30,6 +30,10 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "vite.config.ts", // 👈 添加
+    "eslint.config.mjs", // 如果有
+    ".eslintrc.cjs", // 如果有（虽然不是 TS，但有时会被扫描）
+    "env.d.ts" // 根目录的 d.ts 文件
   ]
 }
