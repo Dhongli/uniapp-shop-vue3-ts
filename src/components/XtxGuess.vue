@@ -4,6 +4,7 @@ import { ref, onMounted } from 'vue'
 import type { GuessItem } from '@/types/home'
 import type { PageResult, PageParams } from '@/types/global'
 
+// 分页参数
 const pageParams: Required<PageParams> = {
   page: 1,
   pageSize: 10,
@@ -33,6 +34,12 @@ const getHomeGoodsGuessLikeData = async () => {
   }
 }
 
+// 重置数据
+const resetData = () => {
+  guessList.value = []
+  pageParams.page = 1
+  finish.value = false
+}
 // 组件挂载完毕
 onMounted(() => {
   getHomeGoodsGuessLikeData()
@@ -41,6 +48,7 @@ onMounted(() => {
 // 暴露方法
 defineExpose({
   getMore: getHomeGoodsGuessLikeData,
+  reset: resetData,
 })
 </script>
 
